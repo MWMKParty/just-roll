@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/MWMKParty/node-rickroll/issues"
   },
-  "homepage": "https://github.com/MWMKParty/node-rickroll#readme"
+  "homepage": "https://github.com/MWMKParty/node-rickroll#readme",
+  "dependencies": {
+    "open": "^8.4.0"
+  }
 }
