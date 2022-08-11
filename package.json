@@ -1,31 +1,32 @@
 {
   "name": "just-roll",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "bin": "index.js",
+  "description": "just script to make your custom rickroll in 2 line of code",
+  "main": "main.js",
+  "bin": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node main.js",
+    "build": "pkg main.js -c package.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/MWMKParty/node-rickroll.git"
+    "url": "git+https://github.com/KIZUNEParty/just-roll.git"
   },
   "keywords": [
     "nodejs"
   ],
   "author": "deth",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/MWMKParty/node-rickroll/issues"
+    "url": "https://github.com/KIZUNEParty/just-roll/issues"
   },
-  "homepage": "https://github.com/MWMKParty/node-rickroll#readme",
+  "homepage": "https://github.com/KIZUNEParty/just-roll#readme",
   "dependencies": {
     "open": "^8.4.0"
   },
   "pkg": {
-    "assets": [ "node_modules/**/*", "index.js", "yarn.lock" ],
-    "targets": [ "node10-win-x64" ],
+    "assets": [  ],
+    "targets": [ "node14-linux-arm64", "node14-macos-arm64", "node14-win-arm64" ],
     "outputPath": "dist"
   }
 }
